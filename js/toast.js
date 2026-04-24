@@ -1,45 +1,37 @@
-<<<<<<< HEAD
 console.log("toast loaded");
 
+// Global Toast Function
 window.showToast = function(message, type = "success") {
-    let container = document.querySelector(".toast-container");
+let container = document.querySelector(".toast-container");
 
-    if (!container) {
-        container = document.createElement("div");
-        container.classList.add("toast-container");
-        document.body.appendChild(container);
-    }
 
-    const toast = document.createElement("div");
-    toast.classList.add("toast", type);
-    toast.innerText = message;
+// Create container if not exists
+if (!container) {
+    container = document.createElement("div");
+    container.classList.add("toast-container");
+    document.body.appendChild(container);
+}
 
-    container.appendChild(toast);
+// Create toast
+const toast = document.createElement("div");
+toast.classList.add("toast", type);
+toast.innerText = message;
+
+container.appendChild(toast);
+
+// Show animation
+setTimeout(() => {
+    toast.classList.add("show");
+}, 100);
+
+// Remove after 3 sec
+setTimeout(() => {
+    toast.classList.remove("show");
 
     setTimeout(() => {
         toast.remove();
-    }, 3000);
+    }, 300);
+}, 3000);
+
+
 };
-=======
-console.log("toast loaded");
-
-window.showToast = function(message, type = "success") {
-    let container = document.querySelector(".toast-container");
-
-    if (!container) {
-        container = document.createElement("div");
-        container.classList.add("toast-container");
-        document.body.appendChild(container);
-    }
-
-    const toast = document.createElement("div");
-    toast.classList.add("toast", type);
-    toast.innerText = message;
-
-    container.appendChild(toast);
-
-    setTimeout(() => {
-        toast.remove();
-    }, 3000);
-};
->>>>>>> 22d39fb7b870bb40c3041a3fe89d75edcee9fbe6
