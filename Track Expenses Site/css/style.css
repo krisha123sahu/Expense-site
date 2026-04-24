@@ -1,0 +1,124 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    background: #0F172A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glass Card */
+.card {
+    width: 350px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    text-align: center;
+    color: #E2E8F0;
+}
+
+/* Title */
+.card h2 {
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.card input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #1E293B;
+    color: white;
+}
+
+/* Button */
+.card button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #6366F1;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #4F46E5;
+}
+
+/* Toggle text */
+#toggleText {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#toggleText span {
+    color: #6366F1;
+    cursor: pointer;
+}
+
+
+/* Toast Container */
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Toast Box */
+.toast {
+    min-width: 250px;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    animation: slideIn 0.4s ease;
+}
+
+/* Types */
+.toast.success {
+    background: #22C55E;
+}
+
+.toast.error {
+    background: #EF4444;
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
