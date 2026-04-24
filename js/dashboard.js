@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // ================= LOGIN CHECK =================
 const user = localStorage.getItem("currentUser");
 
@@ -231,7 +230,7 @@ updateUI();
 renderExpenses();
 renderChart();
 generateInsight();
-=======
+
 // ================= LOGIN CHECK =================
 const user = localStorage.getItem("currentUser");
 
@@ -464,4 +463,3 @@ updateUI();
 renderExpenses();
 renderChart();
 generateInsight();
->>>>>>> 22d39fb7b870bb40c3041a3fe89d75edcee9fbe6
