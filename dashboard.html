@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,3 +93,99 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Expense IQ</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>Expense IQ</h2>
+        <button onclick="logout()">Logout</button>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <h1>Welcome 👋</h1>
+        <p id="userEmail"></p>
+
+        <!-- Budget Section -->
+        <div class="budget-section">
+            <input type="number" id="budgetInput" placeholder="Enter your budget">
+            <button onclick="setBudget()">Set Budget</button>
+        </div>
+
+        <!-- Expense Section -->
+        <div class="expense-section">
+            <input type="text" id="expenseName" placeholder="Expense name">
+
+            <select id="expenseCategory">
+                <option value="Food">Food 🍔</option>
+                <option value="Travel">Travel ✈️</option>
+                <option value="Shopping">Shopping 🛍️</option>
+                <option value="Other">Other 📦</option>
+            </select>
+
+            <input type="number" id="expenseAmount" placeholder="Amount">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Budget</h3>
+                <p id="budget">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Expenses</h3>
+                <p id="expense">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>Remaining Balance</h3>
+                <p id="balance">₹0</p>
+            </div>
+
+        </div>
+
+        <!-- Expense List -->
+        <div class="expense-list">
+            <h2>Expense History</h2>
+            <ul id="expenseList"></ul>
+        </div>
+
+        <!-- Chart Section -->
+        <div class="chart-section">
+            <h2>Expense Analysis</h2>
+            <canvas id="expenseChart"></canvas>
+        </div>
+
+        <div class="insight-box">
+            <h2>Smart Insight</h2>
+            <p id="insightText">No data yet</p>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="js/toast.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>
+>>>>>>> 22d39fb7b870bb40c3041a3fe89d75edcee9fbe6

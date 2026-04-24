@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -238,3 +239,145 @@ input, select {
     color: #22C55E;
     font-weight: 600;
 }
+=======
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0F172A;
+    color: #E2E8F0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #1E293B;
+}
+
+nav button {
+    background: #EF4444;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.container {
+    padding: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    flex: 1;
+    background: #1E293B;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 24px;
+    color: #6366F1;
+}
+.budget-section {
+    margin-top: 20px;
+}
+
+.budget-section input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 10px;
+}
+
+.budget-section button {
+    padding: 10px 15px;
+    background: #22C55E;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.expense-section {
+    margin-top: 20px;
+}
+
+.expense-section input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 10px;
+}
+
+.expense-section button {
+    padding: 10px 15px;
+    background: #6366F1;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+.expense-list {
+    margin-top: 40px;
+}
+
+.expense-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.expense-list li {
+    background: #1E293B;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expense-list button {
+    background: #EF4444;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.chart-section {
+    margin-top: 40px;
+    background: #1E293B;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 500px;   /* controls width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#expenseChart {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+.insight-box {
+    margin-top: 30px;
+    background: #1E293B;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.insight-box p {
+    font-size: 18px;
+    color: #22C55E;
+}
+>>>>>>> 22d39fb7b870bb40c3041a3fe89d75edcee9fbe6
